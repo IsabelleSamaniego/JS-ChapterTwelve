@@ -9,19 +9,19 @@
 
       Filename: project12-01.js
 */
-$(() => {
-// 4.
-$("li#submenu").mouseover( (e) => {
 
-    $(e.currentTarget).children("ul").show();
 
-})
-// 5.
-.mouseout( (e) => {
+$(document).ready(function() {
 
-    $(e.currentTarget).children("ul").hide();
-
-})
+    $("li.submenu").mouseover(function(e){
+  
+      $(e.currentTarget).children("ul").show();
+      
+    }).mouseout(function(e){
+  
+      $(e.currentTarget).children("ul").hide();
+      
+    });
 
 });
                                                 
